@@ -1,11 +1,7 @@
-import random
-import os
 import time
 import requests
 import re
-from html.parser import HTMLParser
 from bs4 import BeautifulSoup
-import json
 
 # weigth = 40
 # heigth = 15
@@ -124,5 +120,5 @@ def shedule(group_id):
             if re.search("^[^\s+]", y.get_text()):
                 info += y.get_text() + "\n"
         if info:
-            text += "Пара " + para_key[index] + "\n" + info + "\n"
+            text += str(index)+"-ая Пара " + para_key[index] + "\n" + info + "\n"
     return text
