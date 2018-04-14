@@ -6,7 +6,7 @@ import re
 import json
 from group import group
 
-DISCORD_BOT_TOKEN = 'NDI4ODU1MTM4MjUwMTI5NDA5.DZ5M5Q.NjA8xcAMYO-hGxiY0xycltczEHs'
+DISCORD_BOT_TOKEN = 'Token'
 
 
 client = discord.Client()
